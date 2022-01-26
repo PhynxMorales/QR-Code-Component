@@ -2,6 +2,7 @@ $White: hsl(0, 0%, 100%);
 $Light_gray: hsl(212, 45%, 89%);
 $Grayish_blue: hsl(220, 15%, 55%);
 $Dark_blue: hsl(218, 44%, 22%);
+$Shadow: rgb(201, 213, 228);
 
 * {
   margin: 0;
@@ -40,7 +41,8 @@ main {
   padding: 1rem;
   text-align: center;
   background-color: $White;
-  border-radius: 15px;
+  box-shadow: 0px 10px 10px 2px rgb(201, 213, 228);
+  border-radius: 20px;
 
   .card__header {
     width: 288px;
@@ -59,6 +61,7 @@ main {
   .card__title {
     font-size: 22px;
     font-weight: 700;
+    color: $Dark_blue;
   }
 
   .card__paragraph {
@@ -66,5 +69,6 @@ main {
     font-weight: 400;
     font-size: 15px;
     padding: 0px 14px;
+    color: $Grayish_blue;
   }
 }
